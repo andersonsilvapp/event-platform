@@ -35,7 +35,7 @@ export function Lesson(props : LessonProps) {
           {isLessonAvailable ? (
           <span className={classNames('text-sm font-medium flex item-center gap-2', {
             'text-white': isActiveLesson,
-            'text-blue-500': isActiveLesson,
+            'text-blue-500': !isActiveLesson,
           })}>
             <CheckCircle size={20}/>
             Conteúdo liberado
